@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int z, n1, n2, nc=0;
+	cin>>z;
+	while(cin>>n1>>n2){
+		int sum=0;
+		nc++;
+		
+		for(int i=n1; i<=n2; i++){
+			if(i%2!=0)
+				sum+=i;
+		}
+		
+		printf("Case %d: %d\n",nc,sum);
+		
+	}
+	
+}
